@@ -1,0 +1,55 @@
+.navbar {
+  background-color: #131313;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  color: #e50914;
+  position: absolute;
+  left: 50%;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+.like-icon{
+  width: 30px;
+  height: 30px;
+}
+span{
+  color: white;
+  font-family: sans-serif;
+  font-size: 2rem;
+}

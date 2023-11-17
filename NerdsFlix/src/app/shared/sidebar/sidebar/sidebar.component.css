@@ -1,0 +1,75 @@
+.navbar-dark .nav-item .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+
+.fa-li {
+  position: relative;
+  left: 0;
+}
+.container-fluid{
+ background: #171717;
+}
+.navbar-brand{
+  color: rgba(235, 253, 250, 0.75);
+  font-size: 2rem;
+}
+.search{
+  color: #2E2E2E;
+  font-size: 2rem;
+}
+.form-control{
+  background-color: rgba(59, 56, 56, 0.75);
+  color: white;
+  width: 30%;
+  height: 40px;
+}
+.form-select {
+  margin-left: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  color: #495057;
+  background-color: #fff;
+}
+
+.form-select:hover {
+  border-color: #80bdff;
+}
+
+@media (max-width: 991px) {
+
+  .form-select {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+.sidebar{
+  position: relative;
+  padding-left: 120rem;
+  bottom: 20px;
+}
+
+.rating-btn{
+  font-size: 1.2rem;
+  background-color: #171717;
+  color: rgba(255, 255, 255, 0.39);
+}
+.form-select{
+  font-size: 1.2rem;
+  background: #171717;
+  color:rgba(255, 255, 255, 0.39) ;
+  font-family: sans-serif;
+}
+
+.sort-by{
+  color: rgba(255, 255, 255, 0.39) ;
+  font-family: sans-serif;
+    font-size: 1.2rem;
+}

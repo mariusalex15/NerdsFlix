@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+
+    <span class="navbar-brand" href="#">
+     Movies
+    </span>
+
+    <!-- Search-->
+      <form class="search">
+        <input type="text" class="form-control" (input)="onSearchChange($any($event.target).value)" placeholder="Search movies...">
+      </form>
+
+    <!-- Sort by-->
+    <div class="sidebar">
+        <span class="sort-by">
+        Sort by
+      </span>
+      <select class="form-select" (change)="onSortChange($any($event.target).value)">
+        <option>Title</option>
+        <option value="title-asc"> [A-Z]</option>
+        <option value="title-desc"> [Z-A]</option>
+      </select>
+      <button class="rating-btn" (click)="sortMoviesByRating()">Rating</button>
+      <!-- other sidebar content -->
+    </div>
+    </div>
+
+
+
+</nav>

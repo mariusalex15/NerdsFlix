@@ -1,1 +1,14 @@
-<p>home-page works!</p>
+
+<div class="user-profile" *ngIf="user">
+  <div class="profile-header">
+    <h1>Who's watching?</h1>
+  </div>
+  <div class="profile-content">
+    <div class="profile">
+      <img [src]="user.avatar" alt="{{ user.name }}" class="profile-avatar" (click)="goToMovies()" >
+      <h2 class="profile-name">{{ user.name }}</h2>
+    </div>
+  </div>
+
+</div>
+

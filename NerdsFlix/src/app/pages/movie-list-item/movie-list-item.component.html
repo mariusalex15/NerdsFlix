@@ -1,1 +1,16 @@
-<p>movie-list-item works!</p>
+<div class="movie-container">
+  <div *ngFor="let movie of movies" class="movie-card">
+    <div class="movie-poster"     (mouseenter)="toggleHoverState(movie.title, true)"
+         (mouseleave)="toggleHoverState(movie.title, false)">>
+      <img [src]="movie.urlPoster" alt="{{ movie.title }}">
+      <button class="like-button"  *ngIf="isHovered(movie.title)" (click)="toggleLike(movie)" >
+        {{ movie.rating }}
+        <img class="like-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/2153px-Star_icon_stylized.svg.png" alt="Like">
+      </button>
+    </div>
+    <div class="movie-info">
+      <h3>{{ movie.title }}</h3>
+      <p> {{ movie.year }}</p>
+    </div>
+  </div>
+</div>

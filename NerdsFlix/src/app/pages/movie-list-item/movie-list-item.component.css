@@ -1,0 +1,68 @@
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movie-card {
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.movie-info {
+  padding: 10px;
+
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 1.1em;
+  font-family: sans serif;
+  color: white;
+}
+
+.movie-info p {
+  font-size: 0.9em;
+  margin: 5px 0;
+  color: white;
+  font-family: sans-serif;
+}
+.like-button{
+
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.like-button:hover{
+    border: none;
+    cursor: pointer;
+}
+
+.movie-poster:hover .like-button {
+     display: block;
+     position: absolute;
+     top: 10px;
+     right: 10px;
+    background-color: inherit;
+     opacity: inherit;
+     border: none;
+     color: white;
+     font-size: 1.5rem;
+     cursor: pointer;
+}
+.like-icon{
+    width: 30px;
+    height: 30px;
+}
